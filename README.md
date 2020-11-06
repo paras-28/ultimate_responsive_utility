@@ -1,6 +1,7 @@
 # utlimate_responsive_utility
 
-A new Flutter application.
+my approach for handling flutter responsiveness 
+stackoverflow answer : https://stackoverflow.com/questions/49704497/how-to-make-flutter-app-responsive-according-to-different-screen-size/64660557#64660557
 
 ## Getting Started
 
