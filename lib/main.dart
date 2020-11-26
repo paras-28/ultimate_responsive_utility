@@ -1,4 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:utlimate_responsive_utility/util%20/adaptive_text_size.dart';
 import 'package:utlimate_responsive_utility/util%20/responsive_widget.dart';
 
 void main() {
@@ -20,20 +22,18 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
-
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   Responsive responsive = Responsive();
-
+AdaptiveTextSize adaptiveTextSize = AdaptiveTextSize();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Responsive "),
+        title: Text("Responsive",style: TextStyle(fontSize: adaptiveTextSize.getadaptiveTextSize(context, 20)),),
       ),
       body: Center(
         child: Container(
